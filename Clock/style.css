@@ -3,7 +3,11 @@ body {
   padding: 0;
   background-color: #00b0d7;
   font-size: 25px;
+  height: 100%;
+  width: 100%;
 }
+
+.noscroll { overflow: hidden; position: fixed; }
 
 .center {
   display: flex;
@@ -13,14 +17,15 @@ body {
 }
 
 .clouds {
-  width: 100%;
+  width: 4000px;
   height: 200px;
   position: absolute;
   top: 25px;
   background-image: url("images/clouds.svg");
-  background-size: 2000px;
+  background-size: 2000px 200px;
   background-repeat-y: no-repeat;
-  animation: clouds 30s linear infinite;
+  overflow: hidden;
+  animation: clouds 45s linear infinite;
 }
 
 .clock {
@@ -67,13 +72,13 @@ body {
   background-size: cover;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 101%;
   height: 25%;
 }
 
 @keyframes clouds {
-	from { background-position: 0 0; }
-	to { background-position: 100% 0; }
+	from { transform: translateX(0%); }
+	to { transform: translateX(-50%); }
 }
 
 @media(max-width: 1000px) {
@@ -88,6 +93,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     top: 70px;
+  }
+
+  .center {
+    align-items: flex-end;
+    height: 65%;
   }
 
 }

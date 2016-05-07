@@ -15,7 +15,7 @@ class Clock {
     let now = new Date();
     let day = this.days[now.getDay() - 1];
     let ordinal = this.getOrdinal(now.getDate());
-    let month = this.months[now.getDate()];
+    let month = this.months[now.getMonth()];
 
     let hour = now.getHours() > 12 ? now.getHours() - 12 : now.getHours();
     let minute = now.getMinutes() < 10 ? "0" + now.getMinutes() : now.getMinutes();
