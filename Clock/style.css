@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #00b0d7;
+  font-size: 25px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.clouds {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 25px;
+  background-image: url("images/clouds.svg");
+  background-size: 2000px;
+  background-repeat-y: no-repeat;
+  animation: clouds 30s linear infinite;
+}
+
+.clock {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.time {
+  font-size: 6em;
+  display: inline-block;
+  text-align: center;
+}
+
+.type {
+  font-size: 3em;
+  display: inline-block;
+}
+
+.date {
+  color: #F9F5F5;
+  font-size: 1.4em;
+  padding-left: 15px;
+}
+
+.sun {
+  background-color: #ffeb3b;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  right: 120px;
+  box-shadow: 0px 0px 33px #D2C12E;
+}
+
+.moon {
+  background-color: #DADADA;
+  box-shadow: 0px 0px 33px #DADADA;
+}
+
+.hills {
+  background-image: url("images/hills.svg");
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+}
+
+@keyframes clouds {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+@media(max-width: 1000px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .sun {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 70px;
+  }
+
+}

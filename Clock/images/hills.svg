@@ -1,0 +1,22 @@
+<svg id="Hills" xmlns="http://www.w3.org/2000/svg" width="1366" height="283" viewBox="0 0 1366 283">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #078cb4;
+        opacity: 0.22;
+      }
+
+      .cls-2 {
+        fill: #8ed6a0;
+      }
+
+      .cls-3 {
+        fill: #77b486;
+      }
+    </style>
+  </defs>
+  <ellipse id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-1" cx="266.5" cy="295.5" rx="336.5" ry="237.5"/>
+  <ellipse id="Ellipse_2_copy" data-name="Ellipse 2 copy" class="cls-1" cx="1305.5" cy="565" rx="998.5" ry="565"/>
+  <ellipse class="cls-2" cx="266.5" cy="302.5" rx="336.5" ry="237.5"/>
+  <ellipse class="cls-3" cx="1305.5" cy="572" rx="998.5" ry="565"/>
+</svg>

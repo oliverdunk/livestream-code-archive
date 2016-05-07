@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1165" height="653" viewBox="0 0 1165 653">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fcfcfc;
+        stroke: #ffebee;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="-173" y="-130" width="1479" height="1001" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="37" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="15.811"/>
+      <feFlood result="flood" flood-color="#00b0d7" flood-opacity="0.25"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="fill: #fcfcfc; filter: url(#filter)">
+    <path id="path" class="cls-1" d="M79,430S69.6,265.008,207,220s157.159-26.06,171.636-26.728c5.411-3.548,74.491,14.4,80.364,23.728,5.837,9.27,165.994-296.06,419-11,6.835,7.7,203.79,35.411,172,253S105.758,562.739,79,430Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#path" style="stroke: #ffebee; filter: none; fill: none"/>
+</svg>
