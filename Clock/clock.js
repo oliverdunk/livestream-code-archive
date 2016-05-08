@@ -24,7 +24,7 @@ let updateClock = function() {
   if(now.getHours() >= 19 || now.getHours() <= 6) {
     document.querySelector(".sun").className = "sun moon";
     document.querySelector(".hills").style.opacity = "0.5";
-    document.querySelector(".cloud").style.opacity = "0.3";
+    document.querySelector(".clouds").style.opacity = "0.3";
     document.body.style.background = "#010D63";
     document.querySelector("#shortcut").href = "images/moon.png";
   }
@@ -32,7 +32,7 @@ let updateClock = function() {
   else {
     document.querySelector(".sun").className = "sun";
     document.querySelector(".hills").style.opacity = "1.0";
-    document.querySelector(".cloud").style.opacity = "1.0";
+    document.querySelector(".clouds").style.opacity = "1.0";
     document.body.style.background = "#00b0d7";
     document.querySelector("#shortcut").href = "images/sun.png";
   }
