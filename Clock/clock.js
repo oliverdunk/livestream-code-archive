@@ -21,6 +21,7 @@ class Clock {
     let month = this.months[now.getMonth()];
 
     let hour = now.getHours() > 12 ? now.getHours() - 12 : now.getHours();
+    if(hour < 10) hour = "0" + hour;
     let minute = now.getMinutes() < 10 ? "0" + now.getMinutes() : now.getMinutes();
     let type = now.getHours() > 12 ? "PM" : "AM";
 
