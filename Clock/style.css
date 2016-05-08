@@ -20,12 +20,13 @@ body {
   width: 4000px;
   height: 200px;
   position: absolute;
-  top: 25px;
-  background-image: url("images/clouds.svg");
+  top: 6px;
+  background-image: url("images/clouds.svg?v2");
   background-size: 2000px 200px;
   background-repeat-y: no-repeat;
   overflow: hidden;
   animation: clouds 45s linear infinite;
+  animation-delay: -5s;
 }
 
 .clock {
