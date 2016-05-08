@@ -27,6 +27,7 @@ body {
   overflow: hidden;
   animation: clouds 45s linear infinite;
   animation-delay: -5s;
+  z-index: -2;
 }
 
 .clock {
@@ -61,11 +62,13 @@ body {
   top: 100px;
   right: 120px;
   box-shadow: 0px 0px 33px #D2C12E;
+  z-index: -1;
 }
 
 .moon {
   background-color: #DADADA;
   box-shadow: 0px 0px 33px #DADADA;
+  z-index: -1;
 }
 
 .hills {
