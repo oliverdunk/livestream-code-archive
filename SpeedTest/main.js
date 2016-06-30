@@ -5,7 +5,7 @@ class SpeedTest {
     this.lastRotation = -145;
 
     this.setupServiceWorker();
-    this.testFiles = ["https://cdn.rawgit.com/oliverdunk/LiveCode/master/SpeedTest/files/5MB.zip"];
+    this.testFiles = ["https://cdn.rawgit.com/oliverdunk/LiveCode/gh-pages/SpeedTest/files/20MB.zip"];
     this.runTest();
   }
 
