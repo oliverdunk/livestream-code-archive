@@ -12,7 +12,7 @@ class SpeedTest {
   setupServiceWorker() {
     //Registers a service worker if the browser supports this
     if (!('serviceWorker' in navigator)) return;
-    navigator.serviceWorker.register('serviceWorker.js', { scope: '/SpeedTest/' });
+    navigator.serviceWorker.register('serviceWorker.js', { scope: '/livestream-code-archive/SpeedTest/' });
   }
 
   runTest() {
