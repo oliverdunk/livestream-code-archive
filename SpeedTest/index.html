@@ -1,0 +1,30 @@
+<html>
+
+  <head>
+    <title>Speed Test</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class='speed-wrapper'>
+      <div class='wheel'></div>
+      <img class='dial' src='images/dial.svg'>
+      <div class='wheel-text'>
+        <div class="speed">
+          <div class='speed-whole'>0</div>
+          <div class='speed-dec'>.0</div>
+        </div>
+        <div class='unit'>Mbps</div>
+      </div>
+      <div class="indicators">
+        <div id="zero">0</div>
+        <div id="onehundred">100</div>
+      </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js'></script>
+    <script src='main.js'></script>
+  </body>
+
+</html>

@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #673ab7;
+  display: flex;
+  justify-content: center;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.speed-wrapper {
+  align-self: center;
+  height: 250px;
+  width: 250px;
+}
+
+.wheel {
+  border-radius: 50%;
+  border: 10px solid white;
+  height: 250px;
+  width: 250px;
+}
+
+.wheel-text {
+  display: inline-block;
+  color: white;
+  width: 130px;
+  background-color: #673ab7;
+  transform: translate(70px, -58px);
+}
+
+.wheel-text .speed {
+  text-align: center;
+}
+
+.wheel-text .speed-whole {
+  font-size: 50px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.wheel-text .speed-dec {
+  display: inline-block;
+  font-size: 30px;
+  opacity: 0.8;
+}
+
+.wheel-text .unit {
+  text-align: center;
+  font-size: 12px;
+}
+
+.dial {
+  width: 27px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  position: absolute;
+  top: calc(50% - 88px);
+  left: 50%;
+  transform: rotate(-145deg);
+  transition: rotate 0.5s;
+  transform-origin: 53% 87%;
+}
+
+.indicators {
+  color: white;
+  font-size: 20px;
+}
+
+.indicators div {
+  display: inline-block;
+}
+
+#zero {
+  transform: translate(47px, -95px);
+}
+
+#onehundred {
+  transform: translate(190px, -95px);
+}
