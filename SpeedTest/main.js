@@ -4,9 +4,9 @@ class SpeedTest {
     this.updateProgress = this.updateProgress.bind(this);
     this.lastRotation = -145;
 
-    this.setupServiceWorker();
     this.testFiles = ["https://cdn.rawgit.com/oliverdunk/LiveCode/gh-pages/SpeedTest/files/20MB.zip"];
     this.runTest();
+    this.setupServiceWorker();
   }
 
   setupServiceWorker() {
@@ -16,20 +16,19 @@ class SpeedTest {
   }
 
   runTest() {
-    this.downloadFile(this.testFiles[0])
+    this.downloadFile(this.testFiles[0]);
   }
 
   downloadFile(url) {
-    return new Promise((resolve, reject) => {
-      var request = new XMLHttpRequest();
-      request.addEventListener('progress', this.updateProgress);
-      request.addEventListener('loadstart', () => {
-        //Request has started, keep track of the UNIX time
-        this.startTime = new Date().getTime();
-      });
-      request.open("GET", url + this.getCacheBuster() , true);
-      request.send();
+    var speedTest = this;
+    var request = new XMLHttpRequest();
+    request.addEventListener('progress', this.updateProgress);
+    request.addEventListener('loadstart', function() {
+      //Request has started, keep track of the UNIX time
+      speedTest.startTime = new Date().getTime();
     });
+    request.open("GET", url + this.getCacheBuster() , true);
+    request.send();
   }
 
   getCacheBuster() {
@@ -58,4 +57,6 @@ class SpeedTest {
 
 }
 
-window.addEventListener('load', _ => new SpeedTest());
+window.addEventListener('load', function() {
+  new SpeedTest();
+});
