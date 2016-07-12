@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-family: Roboto, Arial, sans-serif;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+}
+
+body::after {
+  background-color: white;
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+}
+
+.search-container {
+  z-index: 1;
+  align-self: center;
+}
+
+.results {
+  max-height: 300px;
+  overflow-y: scroll;
+  margin-top: 7px;
+  border: 2px solid #d4d4d4;
+}
+
+.results:empty {
+  border: none;
+}
+
+input[type='text']#search {
+  display: inline-block;
+  border-radius: 5px;
+  border: 2px solid #808080;
+  padding: 14px 24px;
+  font-size: 42px;
+}
+
+input[type='text']#search:focus {
+  outline: none;
+}
+
+.result {
+  color: #272727;
+  padding: 12px 15px;
+  border-bottom: 1px solid #c7c7c7;
+  background-color: white;
+}
+
+.result:hover {
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.result:last-child {
+  border-bottom: none;
+}
+
+.station-preview {
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 55px 70px;
+  display: none;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  max-width: 300px;
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #272727;
+}
+
+.services {
+  margin-top: 30px;
+}
+
+.services h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.service {
+  margin-top: 20px;
+  padding: 12px;
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  width: 34px;
+  margin-left: 14px;
+}
+
+.service .unavailable {
+  background-color: #e6e6e6;
+  opacity: 0.3;
+}
+
+.service:first-of-type {
+  margin-left: 0;
+}
+
+.service h2 {
+  margin-top: 3px;
+}
+
+.unavailable {
+  background-color: #e2dcdc;
+  opacity: 0.4;
+}
+
+.close {
+  font-size: 25px;
+  color: #2b2b2b;
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+}

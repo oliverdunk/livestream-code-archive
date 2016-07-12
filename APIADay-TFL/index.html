@@ -1,0 +1,45 @@
+<html>
+
+  <head>
+    <title>TFL Demo</title>
+    <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+  </head>
+
+  <body>
+    <div class='search-container'>
+      <input type='text' placeholder='Search for a station' id="search" autocomplete="off">
+      <div class='results'>
+
+      </div>
+      <div class='station-preview'>
+        <h1 class='name'>Waterloo</h1>
+        <h2 class='id'>HUBGDX</h1>
+        <div class='services'>
+          <h1>Available Services</h1>
+
+          <div class='service train'>
+            <i class='fa fa-train'></i>
+            <h2>Rail</h2>
+          </div>
+
+          <div class='service tube'>
+            <i class='fa fa-subway'></i>
+            <h2>Tube</h2>
+          </div>
+
+          <div class='service bus'>
+            <i class='fa fa-bus'></i>
+            <h2>Bus</h2>
+          </div>
+        </div>
+        <div class="close">
+          <i class="fa fa-close"></i>
+        </div>
+      </div>
+    </div>
+    <script src='scripts/stationPreview.js'></script>
+    <script src='scripts/search.js'></script>
+  </body>
+
+</html>
