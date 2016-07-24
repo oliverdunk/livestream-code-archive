@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-family: Roboto, sans-serif;
+}
+
+.carousel {
+  background-color: snow;
+  border-radius: 2px;
+  width: 700px;
+  max-width: 90%;
+  height: 450px;
+  align-self: center;
+  overflow: hidden;
+  box-shadow: 2px 2px 6px rgba(142, 142, 142, 0.71);
+  position: relative;
+}
+
+.carousel-items {
+  height: 100%;
+  transform: translateX(0%);
+  font-size: 0px;
+  white-space: nowrap;
+}
+
+.carousel-item {
+  background-size: cover;
+  color: white;
+  height: 100%;
+  width: 700px;
+  max-width: 90vw;
+  display: inline-flex;
+  justify-content: center;
+  text-shadow: 2px 2px 14px black;
+}
+
+.carousel-item h1 {
+  align-self: center;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.one {
+  background-image: url("images/one.jpeg");
+}
+
+.two {
+  background-image: url("images/two.jpeg");
+}
+
+.three {
+  background-image: url("images/three.jpeg");
+}
+
+.carousel-next,
+.carousel-previous {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.carousel-next:focus,
+.carousel-previous:focus {
+  outline: none;
+}
+
+.carousel-next {
+  right: 25px;
+  left: auto;
+}
