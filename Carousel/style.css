@@ -43,15 +43,15 @@ body {
 }
 
 .one {
-  background-image: url("images/one.jpeg");
+  background-image: url("images/one.png");
 }
 
 .two {
-  background-image: url("images/two.jpeg");
+  background-image: url("images/two.png");
 }
 
 .three {
-  background-image: url("images/three.jpeg");
+  background-image: url("images/three.png");
 }
 
 .carousel-next,
