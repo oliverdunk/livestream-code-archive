@@ -51,6 +51,10 @@ class PNG {
         case "IDAT": {
           let chunk = new IDATChunk();
           chunk.decode(this, length, reader);
+          break;
+        }
+        case "IEND": {
+          //Image has been read succesfully
           finished = true;
           break;
         }
